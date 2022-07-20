@@ -35,7 +35,7 @@ function displayMovieList(movies) {
       let movieListItem = document.createElement('div');
       movieListItem.dataset.id = movies[i].imdbID;
       movieListItem.classList.add('search-list-item');
-      if(movies[i].Poster! !== 'N/A')
+      if(movies[i].Poster !== 'N/A')
         moviePoster = movies[i].Poster;
       else
         moviePoster = `${noImgFound}`;
@@ -74,7 +74,7 @@ function displayMovieList(movies) {
 function displayMovieDetails(details){
   resultGrid.innerHTML = `
   <div class="movie-poster">
-    <img src="${details.Poster !== 'N/A' ? details.Poster : ${noImgFound}}" alt=" Movie poster" />
+    <img src="${details.Poster !== 'N/A' ? details.Poster : 'https://th.bing.com/th/id/OIP.ke9cNKXh8oX10dfQiEryKgAAAA?w=148&h=180&c=7&r=0&o=5&pid=1.7'}"/>
   </div>
   <div class="movie-info">
     <h3 class="movie-title">${details.Title}</h3>
