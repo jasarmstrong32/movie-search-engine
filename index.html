@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <script type="module" src="/main.js"></script>
+
     <div class="wrapper">
       <!-- logo start-->
       <div class="logo">
@@ -25,12 +27,13 @@
             placeholder="Search movie title...."
             id="movie-search-box"
             onkeyup="findMovies()"
-          />
+            onclick="findMovies()"/>
+           
 
           <div class="search-list" id="search-list">
             <!-- list here -->
-            <!-- <div class="search-list-item">
-              <div class="search-item-thumbnail">
+            <div class="search-list-item">
+              <!-- <div class="search-item-thumbnail">
                 <img
                   src="https://th.bing.com/th/id/OIP.Jlp7M_dVz9RwOw9RZDYXSwHaE0?w=286&h=186&c=7&r=0&o=5&pid=1.7"
                   alt="Poster"
@@ -39,8 +42,8 @@
               <div class="search-item-info">
                 <h3>Movie Title</h3>
                 <p>Movie release year</p>
-              </div>
-            </div> -->
+              </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -51,9 +54,9 @@
         <div class="result-container">
           <div class="result-grid" id="result-grid">
             <!-- movie info -->
-            <div class="movie-poster">
+            <!-- <div class="movie-poster">
               <img
-                src="https://th.bing.com/th/id/OIP.Jlp7M_dVz9RwOw9RZDYXSwHaE0?w=286&h=186&c=7&r=0&o=5&pid=1.7"
+                src="https://th.bing.com/th/id/OIP.ke9cNKXh8oX10dfQiEryKgAAAA?w=148&h=180&c=7&r=0&o=5&pid=1.7"
                 alt=" Movie poster"
               />
             </div>
@@ -72,13 +75,11 @@
               <p class="awards">
                 <b><i class="fasfa-award"></i></b> MovieAwards
               </p>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
       <!-- result container end -->
     </div>
-
-    <script type="module" src="/main.js"></script>
   </body>
 </html>
